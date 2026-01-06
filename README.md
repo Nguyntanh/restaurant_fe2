@@ -1,97 +1,38 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+ần mềm POS đơn thuần; nó là một giải pháp quản trị toàn diện được thiết kế để xóa bỏ sự đứt gãy thông tin giữa các bộ phận vận hành và các nền tảng bán hàng trực tuyến.
 
-# Getting Started
+🌟 Giá Trị Độc Bản (USP)
+Khác với các phần mềm quản lý thông thường, OmniRest đóng vai trò là một "trạm trung chuyển dữ liệu" thông minh:
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+Đồng bộ đa kênh 2 chiều: Tự động ẩn món trên Grab/Shopee khi hết hàng, giảm tỷ lệ hủy đơn xuống 0%.
 
-## Step 1: Start Metro
+Quản trị "Linh hồn" lợi nhuận: Tự động trừ kho theo định mức (BOM) và cảnh báo hao hụt thực tế.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+Vận hành không chạm: Số hóa hoàn toàn luồng dữ liệu từ Order -> Bếp -> Thu ngân.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+🏗️ Kiến Trúc Giải Pháp (Tech Stack)
+Hệ thống được xây dựng trên nền tảng công nghệ mạnh mẽ, đảm bảo tính chính xác tuyệt đối trong xử lý giao dịch:
 
-```sh
-# Using npm
-npm start
+Backend: Java Spring Boot 3.4.1 – Đảm bảo tính ổn định cho logic trừ kho phức tạp và giao dịch tài chính.
 
-# OR using Yarn
-yarn start
-```
+Frontend: React.js – Web Admin/Web App mượt mà cho điều phối và báo cáo.
 
-## Step 2: Build and run your app
+Mobile: React Native – Ứng dụng di động linh hoạt cho nhân viên phục vụ, hỗ trợ can thiệp phần cứng (máy in/POS).
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Real-time: WebSocket (STOMP) – Kết nối tức thời giữa các bộ phận, đảm bảo thông tin không có độ trễ.
 
-### Android
+🛠️ Các Trụ Cột Tính Năng Chính
 
-```sh
-# Using npm
-npm run android
+1. Seamless Operation (Vận hành không chạm)
+   Số hóa luồng đơn hàng từ POS tại quán và các App giao hàng (Grab/Shopee) về một màn hình điều phối duy nhất.
 
-# OR using Yarn
-yarn android
-```
+2. Inventory & BOM Management
+   Quản lý định mức nguyên liệu (Bill of Materials). Tự động đối soát hao hụt lý thuyết và thực tế, cảnh báo khi tồn kho thấp.
 
-### iOS
+3. Loss Prevention (Chống thất thoát)
+   Kiểm soát chặt chẽ hành vi hủy món, giảm giá thông qua Audit Log (Nhật ký hệ thống) và phân quyền (RBAC).
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+4. Light CRM
+   Tích hợp Zalo/Facebook để chăm sóc khách hàng tự động và tích điểm thành viên mà không cần cài đặt app trung gian.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+📈 Tầm Nhìn Phát Triển
+Hướng tới trở thành một nền tảng phân tích dữ liệu lớn (Big Data), giúp chủ doanh nghiệp đưa ra các quyết định thay đổi thực đơn và chiến lược kinh doanh dựa trên hành vi thực tế của khách hàng.
